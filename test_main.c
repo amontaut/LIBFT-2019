@@ -6,6 +6,7 @@
 
 char	for_mapi(unsigned int n, char c)
 {
+	printf("hello");
 	n = 2;
 	if (c >= 97 && c <= 122)
 		c = c - 32;
