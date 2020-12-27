@@ -6,7 +6,7 @@
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 23:28:34 by amontaut          #+#    #+#             */
-/*   Updated: 2020/11/24 13:48:11 by amontaut         ###   ########.fr       */
+/*   Updated: 2020/12/27 14:52:30 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,22 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_putnbr(int nb);
+char				*ft_strcpy(char *dest, char *src);
+char				*ft_strncpy(char *dest, char *src, unsigned int n);
+char				*ft_strlowcase(char *str);
+char				*ft_strcapitalize(char *str);
+int					ft_strcmp(char *s1, char *s2);
+char				*ft_strstr(char *str, char *to_find);
+int					ft_is_prime(int nb);
+void				ft_putchar(char c);
+void				ft_putstr(char *str);
+int					ft_str_is_alpha(char *str);
+int					ft_str_is_numeric(char *str);
+int					ft_str_is_lowercase(char *str);
+int					ft_str_is_uppercase(char *str);
+char				*ft_strupcase(char *str);
+int					ft_str_is_printable(char *str);
 
 typedef struct		s_list
 {
