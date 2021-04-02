@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_itoa_unsigned.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 19:54:58 by amontaut          #+#    #+#             */
-/*   Updated: 2021/01/12 22:30:15 by amontaut         ###   ########.fr       */
+/*   Updated: 2021/04/01 12:17:06 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/ft_printf.h"
 
-static int	size_response(int n)
+static int	size_response(uintptr_t n)
 {
-	int size_res;
-	int div;
+	int			size_res;
+	uintptr_t	div;
 
 	div = n;
 	size_res = 0;
@@ -27,7 +27,7 @@ static int	size_response(int n)
 	return (size_res);
 }
 
-static char	*n_is_pos(int n, int size_res)
+static char	*n_is_pos(uintptr_t n, int size_res)
 {
 	char	*res;
 	int		j;
@@ -46,7 +46,7 @@ static char	*n_is_pos(int n, int size_res)
 	return (res);
 }
 
-static char	*n_is_neg(int n, int size_res)
+static char	*n_is_neg(uintptr_t n, int size_res)
 {
 	char	*res;
 	int		j;
@@ -77,12 +77,14 @@ static char	*n_is_zero(int size_res)
 	return (res);
 }
 
-char		*ft_itoa(int n)
+char		*ft_itoa_unsigned(uintptr_t n)
 {
-	if (n == -2147483648)
+	if (n == (unsigned long)-2147483648)
 		return (ft_strdup("-2147483648"));
 	else if (n > 0)
+	{
 		return (n_is_pos(n, size_response(n)));
+	}
 	else if (n < 0)
 	{
 		n = n * -1;

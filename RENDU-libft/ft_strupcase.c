@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/23 17:44:31 by amontaut          #+#    #+#             */
-/*   Updated: 2020/12/23 22:26:26 by amontaut         ###   ########.fr       */
+/*   Created: 2020/09/10 19:44:40 by amontaut          #+#    #+#             */
+/*   Updated: 2021/04/01 10:51:52 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/ft_printf.h"
 
 char	*ft_strupcase(char *str)
 {
