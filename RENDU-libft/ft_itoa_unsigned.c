@@ -6,8 +6,7 @@
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 19:54:58 by amontaut          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/01/12 22:32:45 by amontaut         ###   ########.fr       */
+/*   Updated: 2021/04/01 12:17:06 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +14,8 @@
 
 static int	size_response(uintptr_t n)
 {
-	int size_res;
-	uintptr_t div;
-=======
-/*   Updated: 2021/04/01 12:17:06 by amontaut         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../includes/ft_printf.h"
-
-static int	size_response(uintptr_t n)
-{
 	int			size_res;
 	uintptr_t	div;
->>>>>>> 77aa4cef148c68b0aff5e3a9d3716f50ac657ae9
 
 	div = n;
 	size_res = 0;
@@ -92,19 +79,12 @@ static char	*n_is_zero(int size_res)
 
 char		*ft_itoa_unsigned(uintptr_t n)
 {
-<<<<<<< HEAD
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	else if (n > 0)
-		return (n_is_pos(n, size_response(n)));
-=======
 	if (n == (unsigned long)-2147483648)
 		return (ft_strdup("-2147483648"));
 	else if (n > 0)
 	{
 		return (n_is_pos(n, size_response(n)));
 	}
->>>>>>> 77aa4cef148c68b0aff5e3a9d3716f50ac657ae9
 	else if (n < 0)
 	{
 		n = n * -1;

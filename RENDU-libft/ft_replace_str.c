@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   replace_str.c                                      :+:      :+:    :+:   */
+/*   ft_replace_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 /*
-** This file the char at tne index i by 1 or several char (so a str) called remplacement
+** This file replaces char at the index i by one or several char (so a str)
+** called replacement. So in old_str, the char at the index i is replaced by
+** the str replacement. new str is returned.
 */
 
 char	*generate_str(int i, char *newstr, char *replacement, char *old_str)
