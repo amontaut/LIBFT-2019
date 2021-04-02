@@ -6,7 +6,11 @@
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 23:28:34 by amontaut          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/03/18 13:33:07 by amontaut         ###   ########.fr       */
+=======
+/*   Updated: 2021/01/12 22:33:50 by amontaut         ###   ########.fr       */
+>>>>>>> 77aa4cef148c68b0aff5e3a9d3716f50ac657ae9
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +20,12 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+<<<<<<< HEAD
 # include <limits.h>
 # include <stdint.h>
+=======
+#include <limits.h>
+>>>>>>> 77aa4cef148c68b0aff5e3a9d3716f50ac657ae9
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
