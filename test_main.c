@@ -1,7 +1,7 @@
 
 #include <string.h>
 #include <stdio.h>
-#include "RENDU-libft/libft.h"
+#include "FINAL-libft/libft.h"
 #include <ctype.h>
 
 char	for_mapi(unsigned int n, char c)
