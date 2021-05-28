@@ -1,5 +1,0 @@
-#files to be ignored :
-a.out
-.gitignore
-*/a.out
-.vscode
