@@ -1,5 +1,4 @@
 #files to be ignored :
-a.out
-*/a.out
-.vscode
+*a.out*
+*.vscode*
 *.o*
