@@ -9,4 +9,3 @@ So, in this repo you will find :
 
 In addition to my own little tester, I used Libftest (https://github.com/jtoty/Libftest), libft-unity (https://github.com/aurelien-brabant/libft-unity), libft-unit-test (https://github.com/alelievr/libft-unit-test) and warmachine (https://github.com/ska42/libft-war-machine).
 
-https://img.shields.io/github/repo-size/amontaut/LIBFT-2020?color=informational&style=for-the-badge
